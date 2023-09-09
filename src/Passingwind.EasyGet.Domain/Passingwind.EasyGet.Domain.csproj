@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Passingwind.EasyGet</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Passingwind.EasyGet.Domain.Shared\Passingwind.EasyGet.Domain.Shared.csproj" />
+        <ProjectReference Include="..\Passingwind.Protocol.NuGet\Passingwind.Protocol.NuGet.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.Emailing" Version="7.3.2" />
+        <PackageReference Include="Volo.Abp.Identity.Domain" Version="7.3.2" />
+        <PackageReference Include="Volo.Abp.PermissionManagement.Domain.Identity" Version="7.3.2" />
+        <PackageReference Include="Volo.Abp.BackgroundJobs.Domain" Version="7.3.2" />
+        <PackageReference Include="Volo.Abp.AuditLogging.Domain" Version="7.3.2" />
+        <PackageReference Include="Volo.Abp.TenantManagement.Domain" Version="7.3.2" />
+        <PackageReference Include="Volo.Abp.SettingManagement.Domain" Version="7.3.2" />
+        <PackageReference Include="Volo.Abp.OpenIddict.Domain" Version="7.3.2" />
+        <PackageReference Include="Volo.Abp.PermissionManagement.Domain.OpenIddict" Version="7.3.2" />
+        <PackageReference Include="Volo.Abp.BlobStoring" Version="7.3.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="NuGet.Protocol" Version="6.7.0" />
+        <PackageReference Include="NuGet.Packaging" Version="6.7.0" />
+    </ItemGroup>
+
+</Project>
